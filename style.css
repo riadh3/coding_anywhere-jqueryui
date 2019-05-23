@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f5f3f5
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffc914;
+    padding: 10px;
+    background: #2e282a;
+    font-size: 20px;
+    display: block;
+    transition: color 2s ease-in-out, background 2s ease;
+}
+nav ul li a:hover{
+    color: #2e282a;
+    background-color: #ffc914
+}
+.nav-log{
+    background: #ffc914;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between
+}
+.nav-log img{
+    height: 60px;
+}
+#toggle-btn{
+    align-self: center;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-icons /* nav ul li:last-of-type */{
+    justify-content: space-around;
+    display: flex;
+    background: #2e282a;
+}
+.nav-icons a{
+    flex: 1 0 auto;
+    text-align-last: center
+}
+@media screen and (min-width:778px){
+    .nav-icons,
+    #toggle-btn{
+        display: none
+    }
+    #nav{
+        display: flex;
+        border-top: 5px solid #ffc914;
+        background: #2e282a;
+    }
+    #nav ul{
+        display: flex!important;
+        justify-content: space-around;
+        flex: 1 0 auto;
+        align-self: center;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    #nav ul li{
+        flex: 1 0 100px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+/* banner!!!!!!!!!!!!! */
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#banner{
+    flex: 1 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url(images/background-banner.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+#banner h1{
+    text-transform: uppercase;
+    color: #ffc914;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+}
+#banner h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #d9e5d6;
+}
+#banner a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding: 10px;
+    color: #ffc914;
+    border: 3px solid #ffc914;
+    background: transparent;
+    transition: color 2s ease, background 2s ease;
+}
+#banner a:hover{
+    color: #2e282a;
+    background: #ffc914;
+}
+
+/* icone section */
+#icon-section{
+    height: 70px;
+    background: #2e282a;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 40%)
+}
+#icon-section a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 30px;
+    color: #ffc914;
+    background: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease
+}
+#icon-section a:hover{
+    transform: translateY(-10px);
+    color: #d9e5d6
+}
+
+/* skills section */
+.title{
+    display: flex;
+    padding: 20px;
+}
+.title-icon{
+    font-size: 60px;
+    color: #ffc914;
+    margin-right: 10px;
+}
+.title-text{
+    padding: 10px;
+    border-left: 3px solid #b5c2b7;
+    text-transform: uppercase
+}
+.title-heading{
+    color: #2e282a
+}
+.title-subheading{
+    padding: 5px;
+    text-transform: capitalize;
+    color: #b5c2b7;
+}
+#skills .title{
+    /* transform: translateY(-40px); */
+    margin-top: -40px;
+}
+.skills-container{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px à;
+}
+.skill{
+    margin: 40px auto;
+    text-align: center
+}
+.skill-icon{
+    font-size: 60px;
+    color: #00a7e1;
+    background: #ffc914;
+    padding: 60px;
+    transition: color 2s ease, background 2s ease;
+}
+.skill-icon:hover{
+    background:#2e282a;
+    color: #ffc914
+}
+.skill h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill p{
+    line-height: 1.5;
+    width: 70%;
+    color: #b5c2b7;
+    margin: auto
+}
+.skill .fa-apple{
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+-webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.skill .fa-google{
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+}
+.skill .fa-android{
+-webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.skill .fa-cog{
+-webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+}
+@media screen and (min-width:576px){
+    .skills-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+    .skill{
+        flex: 1 0 calc(50% - 15px)
+    }
+}
+@media screen and (min-width:992px){
+    .skill{
+        flex: 1 0 calc(25% - 10px)
+    }
+}
+
+/* subscribe section */
+#subscribe{
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+        url(images/background-filler-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe h1{
+    text-align: center;
+    color: #f5f3f5;
+    margin: 0 0 40px 0;
+    font-size: 40px;
+    text-transform: uppercase
+}
+#email{
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #f5f3f5;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+#email::placeholder{
+    color: #f5f3f5;
+    text-transform: capitalize;
+}
+#submit{
+    display: inline-block;
+    background: transparent;
+    border: 3px solid #f5f3f5;
+    padding: 10px 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffc914;
+    margin: 10px 20px;
+    transition: color 2s ease, background 2s ease,
+        border 2 ease
+}
+#submit:hover{
+    color: #f5f3f5;
+    background: #ffc914;
+    border-color: #ffc914;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
